@@ -5,6 +5,8 @@ currentDirectory = os.path.dirname(os.path.abspath(__file__))
 
 app = Flask(__name__)
 
+#hallo
+
 @app.route("/")
 def startpage():
     return render_template("index.html")
