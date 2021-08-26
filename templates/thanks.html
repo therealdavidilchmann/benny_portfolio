@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/thanks.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    
+    <h1><br>Thanks, {{ name }} for sending a request with the reason {{ reason }}</h1>
+
+    <a href="/">Back to my photos</a>
+</div>
+{% endblock %}

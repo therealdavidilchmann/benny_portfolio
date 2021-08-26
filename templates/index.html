@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col">
+            <img class="vertical img" src="{{ url_for('static', filename='img/IMG_2868.jpg') }}" alt="">
+            <img class="vertical img" src="{{ url_for('static', filename='img/IMG_2729.jpg') }}" alt="">
+            <img class="vertical img" src="{{ url_for('static', filename='img/IMG_2033.jpg') }}" alt="">
+        </div>
+        <div class="col">
+            <img class="vertical img" src="{{ url_for('static', filename='img/IMG_3037.jpg') }}" alt="">
+            <img class="vertical img" src="{{ url_for('static', filename='img/IMG_3586.jpg') }}" alt="">
+            <img class="vertical img" src="{{ url_for('static', filename='img/IMG_4758.jpg') }}" alt="">
+        </div>
+    </div>
+{% endblock %}

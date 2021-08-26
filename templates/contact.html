@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block header %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="contact-left">
+        <h1><br>Hello please contact me via email. My adress is benjamin@ilchmann.biz</h1>
+        <div class="form-wrapper">
+            <form action="/mail" method="post">
+                <label for="mail">E-Mail:</label>
+                <input type="text" name="mail">
+                <label for="name">Name: (First, Last)</label>
+                <input type="text" name="name">
+                <label for="reason">Reason:</label>
+                <input type="text" name="reason">
+                <input type="submit" value="send">
+            </form>
+        </div>
+        <div class="routenplaner-wrap">
+            <a class="routenplaner" href="https://www.google.com/maps/dir//Waldkolonie+14,+64404+Bickenbach/@49.74815,8.61557,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47bd7cfa1f58f6dd:0xbbc02435116ba66e!2m2!1d8.6163971!2d49.7488871" target="_blank">Where I live</a>
+        </div>
+    </div>
+    
+
+    <div class="contact-right">
+        <h1><br></h1>
+        <img class="contact-img" src="{{ url_for('static', filename='img/Brentwood Close up.jpg') }}" alt="">
+    </div>
+</div>
+{% endblock %}
